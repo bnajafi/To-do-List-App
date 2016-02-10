@@ -39,7 +39,7 @@ var addTask=function(){
 	// When the button is pressed
 	inCompleteTasksHolder.appendChild(listItem);
 	bindTaskEvents(listItem, taskCompleted);
-
+askInput.innerText="";
 	}
 
 //edit an existing task
