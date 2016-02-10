@@ -38,6 +38,7 @@ var addTask=function(){
 	// append the list item to the incomplete task holder
 	// When the button is pressed
 	inCompleteTasksHolder.appendChild(listItem);
+	bindTaskEvents(listItem, taskCompleted);
 
 	}
 
@@ -56,10 +57,10 @@ if (containsClass){
 
 
 }else{
-	editInput.value=abel.innerText;
+	editInput.value=label.innerText;
 
 }
-
+listItem.classList.toggle("editMode")
 	//else
 		//switch to editMode 
 		//input Value becomes thhe label's text
